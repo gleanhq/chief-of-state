@@ -69,7 +69,7 @@ build-image:
     FROM +prepare-image
     # build the image and push remotely (if all steps are successful)
     ARG VERSION=gleanhq-fix
-    SAVE IMAGE --push chief-of-state:${VERSION}
+    SAVE IMAGE --push tochemey/chief-of-state:${VERSION}
 
 test-local:
     FROM +code
